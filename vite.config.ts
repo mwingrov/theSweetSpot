@@ -5,9 +5,9 @@ import tsconfigPaths from "vite-tsconfig-paths";
 import { tanstackRouter } from "@tanstack/router-plugin/vite";
 
 // GitHub Pages base path. Project lives at:
-//   https://mwingrov.github.io/theSweetSpot.github.io/
+//   https://mwingrov.github.io/theSweetSpot/
 // Override with VITE_BASE when running locally or on another host.
-const base = process.env.VITE_BASE ?? "/theSweetSpot.github.io/";
+const base = process.env.VITE_BASE ?? "/theSweetSpot/";
 
 export default defineConfig({
   base,
