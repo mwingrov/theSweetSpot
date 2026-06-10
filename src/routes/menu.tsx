@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { waLink } from "@/lib/bakery";
+import { waLink } from "../lib/bakery";
 
 export const Route = createFileRoute("/menu")({
   head: () => ({

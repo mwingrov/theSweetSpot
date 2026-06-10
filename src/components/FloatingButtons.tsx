@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { waLink } from "@/lib/bakery";
+import { waLink } from "../lib/bakery";
 
 export function FloatingButtons() {
   const [show, setShow] = useState(false);

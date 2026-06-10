@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { waLink } from "@/lib/bakery";
+import { waLink } from "../lib/bakery";
 
 export const Route = createFileRoute("/payment")({
   head: () => ({
@@ -20,11 +20,10 @@ export const Route = createFileRoute("/payment")({
 });
 
 const bankRows = [
-  { label: "Bank Name", val: "[Placeholder]" },
-  { label: "Account Holder", val: "[Placeholder]" },
-  { label: "Account Number", val: "[Placeholder]" },
-  { label: "Branch Code", val: "[Placeholder]" },
-  { label: "Reference", val: "Customer Name" },
+  { label: "Bank Name", val: "Capitec Bank" },
+  { label: "Account Holder", val: "JJ Beukes" },
+  { label: "Account Number", val: "2552447542" },
+  { label: "Branch Code", val: "470010" },
 ];
 
 function PaymentPage() {

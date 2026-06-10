@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { waLink } from "@/lib/bakery";
+import { waLink } from "../lib/bakery";
 
 const links = [
   { to: "/", label: "Home" },

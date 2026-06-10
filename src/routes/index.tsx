@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { waLink } from "@/lib/bakery";
+import { waLink } from "../lib/bakery";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -22,7 +22,7 @@ export const Route = createFileRoute("/")({
       },
     ],
   }),
-  component: Home,
+  component: () => <Home />, // Attaches the local Home component to the route
 });
 
 const categories = [
@@ -47,6 +47,7 @@ const galleryImages = [
   "https://images.unsplash.com/photo-1464195244916-405fa0a82545?w=500&q=80",
 ];
 
+// Changed from 'export function Home' to a local standard function
 function Home() {
   return (
     <>
